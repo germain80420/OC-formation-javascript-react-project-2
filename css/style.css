@@ -1,0 +1,729 @@
+/* Règles CSS general */
+
+body {
+    width: 99%;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+p {
+    padding-top: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Règles CSS du header */
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+}
+
+.logo img {
+    width: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+li {
+    margin: 0px;
+    list-style: none;
+    padding: 20px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 15px;
+    padding-top: 0px;
+}
+
+nav li:hover {
+    border-top: 1px solid #0065FC;
+}
+
+nav li:hover>a {
+    color: #0065FC;
+}
+
+
+/* Règles CSS pour la section de recherche */
+
+#search-icon {
+    display: none;
+}
+
+.search {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#location {
+    border-radius: 15px 0px 0px 15px;
+    padding: 11px;
+}
+
+input {
+    background-color: white;
+    border: 0px;
+    height: 97%;
+    font-weight: bold;
+}
+
+.form-search {
+    display: flex;
+    margin-top: 15px;
+}
+
+form {
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    border-radius: 5px 15px 15px 5px;
+
+}
+
+form button {
+    background-color: #0065FC;
+    border: 2px solid #0065FC;
+    color: white;
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter h2 {
+    margin-top: 30px;
+    font-size: medium;
+}
+
+.btn-filter {
+    border: 2px solid #D9D9D9;
+
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.btn-filter i {
+    margin-right: 10px;
+    color: #0065FC;
+
+}
+
+.btn-filter:hover {
+    margin: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+.info {
+    border: 1px solid #D9D9D9;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+}
+
+.info i {
+    font-size: x-small;
+    color: #0065FC;
+    margin: auto;
+    vertical-align: middle;
+}
+
+
+/* Règles CSS du container de la section Hébergement et de la section Les plus populaires et règles communes */
+
+.container-search-result-and-best-places {
+    display: flex;
+    width: 100%;
+
+}
+
+.search-result .card-infos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    padding: 5px;
+    font-size: small;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.card-infos p {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.rate {
+    color: #0065FC;
+    position: absolute;
+    bottom: 2px;
+}
+
+/* Règles CSS section Hébergement */
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+
+}
+
+.search-result h2 {
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-result-card img {
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.search-result a {
+    width: 30%;
+}
+
+.search-result-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(186, 186, 186);
+    position: relative;
+
+
+}
+
+.more-infos {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+/* Règles CSS section Les plus populaires */
+
+.best-places {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.best-places h2 {
+    margin-bottom: 20px;
+}
+
+.heading-best-places {
+    display: flex;
+    margin-top: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.best-places .card-infos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    padding: 5px;
+    font-size: small;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.icon-best-places {
+    position: absolute;
+    right: 0px;
+}
+
+.icon-best-places i {
+    text-align: right;
+    color: #0065FC;
+    height: fit-content;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.best-places-card {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(186, 186, 186);
+
+}
+
+.best-places-card img {
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.best-places-card i {
+    margin-top: 30px;
+}
+
+
+/* Règles CSS section Activités */
+
+.activities h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.activities {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: auto;
+}
+
+.cards-activities-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    padding-block-end: 20px;
+    justify-content: space-between;
+}
+
+.cards-activities-container a {
+    width: 23%;
+    position: relative;
+}
+
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 1px 1px 1px 1px #D9D9D9;
+    object-fit: cover;
+    font-weight: bold;
+    font-size: small;
+    position: relative;
+    height: auto;
+    aspect-ratio: 3/4;
+}
+
+.activity-card h3 {
+    margin-left: 20px;
+    font-size: medium;
+    position: absolute;
+    top: 84%;
+}
+
+.activity-card img {
+    border-radius: 15px 15px 0px 0px;
+    height: 84%;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/* Règles CSS section footer */
+footer {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #F2F2F2;
+    padding: 30px;
+
+}
+
+.footer-article {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+
+/* Règles CSS spécifiques pour tablette */
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        width: auto;
+        margin: 20px;
+        margin-bottom: 0px;
+    }
+
+    .logo img {
+        width: 15%;
+        margin-top: 10px;
+    }
+
+    header {
+        width: auto;
+
+    }
+
+    ul {
+        justify-content: end;
+    }
+
+    .container-search-result-and-best-places {
+        flex-direction: column;
+    }
+
+    .search-result {
+        width: auto;
+    }
+
+
+    .best-places {
+        width: auto;
+        padding: 5px;
+    }
+
+    .best-places-cards-container a{
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .best-places-cards-container {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: auto;
+    }
+
+    .best-places-card {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        line-height: normal;
+    }
+
+    .card-infos {
+        line-height: normal;
+        font-size: 40%;
+    }
+
+    .best-places-card img {
+        width: 45%;
+    }
+
+    .best-places-card .card-infos {
+
+        justify-content: space-between;
+    }
+
+    .best-places-card .rate {
+        vertical-align: text-bottom;
+    }
+
+    .best-places-card i {
+        margin-top: 0px;
+        height: fit-content;
+    }
+    .activity-card h3{
+        top: 82%;
+    }
+}
+
+/* Règles spécifiques pour mobile */
+
+@media screen and (max-width:767px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    nav ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        right: 0px;
+
+    }
+
+    nav li {
+        text-align: center;
+        border-top: none;
+        border-bottom: 2px solid #D9D9D9;
+        width: 50%;
+    }
+
+    nav li:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    #search-text {
+        display: none;
+    }
+
+    #search-icon {
+        display: block;
+    }
+    .search{
+        padding-bottom: 20px;
+    }
+
+    .container-search-result-and-best-places {
+        flex-direction: column-reverse;
+    }
+
+    .best-places {
+        margin: 0px;
+        padding: 5px;
+        width: auto;
+        border-radius: 0px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .best-places-card {
+        width: 95%;
+        aspect-ratio: 6/2;
+        height: auto;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .icon-best-places{
+        margin-top: 30px;
+    }
+
+    .search-result {
+        width: 90%;
+        margin: auto;
+        background-color: white;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .search-result a {
+        width: 100%;
+        padding-top: 56%;
+        position: relative;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-result-card {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    .more-infos {
+        display: none;
+    }
+
+    .search-result-card img {
+        border-radius: 20px 20px 0px 0px;
+        padding: 5px 5px 0px 5px;
+        position: relative;
+        min-height: 60%;
+        margin-bottom: 0px;
+    }
+
+    .card-infos {
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-top: 0px;
+        position: relative;
+        
+    }
+    .search-result-card .card-infos {
+       padding: 0px;
+
+    }
+        
+    form {
+        display: flex;
+        width: 100%;
+        margin: 10px;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    form button {
+        width: 20%;
+    }
+
+    .filter {
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+
+    .filter h2 {
+        width: 100%;
+    }
+
+    .btn-filter {
+        width: 40%;
+        height: auto;
+        font-weight: bold;
+        text-align: left;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .btn-filter:hover {
+        width: 40%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .activities {
+        padding-bottom: 80px;
+    }
+
+    .activities h2 {
+        width: 30%;
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+
+    .cards-activities-container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .cards-activities-container a {
+        width: 98%;
+        margin: auto;
+    }
+
+    .activity-card {
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        aspect-ratio: 16/9;
+    }
+
+    footer {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .footer-article {
+        width: auto;
+        text-align: left;
+        margin: 20px;
+    }
+}
+
+/* Règles pour les mobiles dont la résolution est inferieur à 350px */
+@media screen and (max-width:350px) {
+   
+    .card-infos{
+        position: relative;
+        line-height:1em;
+    }
+    .search-result-card .card-infos{
+        font-size: 50%;
+    }
+
+} 
